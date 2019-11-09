@@ -1,0 +1,37 @@
+server:
+    port: 8081
+    context-path: /
+#公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
+mybatis:
+  typeAliasesPackage: com.shaoyujian.JavaRunWeb.model
+  #mapperLocations: classpath:com/shaoyujian/JavaRunWeb/mapper*.xml
+management: 
+    context-path: /manage
+spring:
+  servlet:
+  
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://101.200.141.102:3306/syj_modity_by_tonfay?useUnicode=true&characterEncoding=utf-8
+    username: syj
+    password: W5LwSzbp9f+k
+
+    # 使用druid数据源
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      poolName: hikari数据库连接池
+      maximumPoolSize: 200
+      minimum-idle: 5
+      autoCommit: true
+      idleTimeout: 600000  #连接空闲时间
+      maxLifetime: 1800000 #一个连接的存活时长ms 30分钟
+      connectionTimeout: 10000 #获取连接最大等待时长 30s
+  mvc:
+       view:
+           prefix: /WEB-INF/jsp/
+           #prefix: /templates/
+           suffix: .jsp

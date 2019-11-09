@@ -1,0 +1,52 @@
+﻿@CHARSET "UTF-8";
+	#box{
+		width:1350px;
+		height:800px;
+	}
+	#topthing{
+		width:1350px;
+		height:50px;
+		border:1px;
+		background:darkgrey ;
+		
+	}
+	#tlthing{
+		width:150px;
+		height:50px;
+		float:left;
+		line-height:50px;
+		text-align:center;
+		background: white;
+		border:2px ;
+		box-shadow: darkgrey 0px 0px 30px 5px inset;
+	}
+	#trthing{
+		width:200px;
+		height:50px;
+		float:right;
+		/*垂直居中*/
+		line-height:50px;
+		/*左右剧中*/
+		text-align: center;
+		background: white;
+		border:2px;
+		/*框的阴影*/
+		box-shadow: darkgrey 0px 0px 30px 5px inset; 
+	}
+	#middlething{
+		width:1330px;
+		height:680px;
+	}
+	
+	#txt{
+		width:1330px;
+		height:340px;
+		float:top;
+	}
+	#retxt{
+		width:1330px;
+		height:300px;
+		
+	}
+	
+	

@@ -1,0 +1,38 @@
+@CHARSET "UTF-8";
+	#box{
+		width:1350px;
+		height:1000px;
+	}
+	
+	
+	#topthing{
+		width:1350px;
+		height:216px;
+
+		
+	}
+	
+	#middlething{
+		width:1330px;
+		height:800px;
+	}
+	
+	#txt{
+		width:660px;
+		height:400px;
+		float:left;
+	}
+	#retxt{
+		width:660px;
+		height:400px;
+		float:right;
+	}
+	#underthing{
+		width:1350px;
+		height:200px;
+	}
+	#answertxt{
+		width:1350px;
+		height:300px;
+	}
+	

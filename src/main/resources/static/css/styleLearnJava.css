@@ -1,0 +1,225 @@
+﻿body {
+
+	background-color: #14213D;
+ 	height: 100%;
+  	width: 100%;
+ 	font-family: 'Lato', sans-serif;
+	
+}
+body a {
+	transition: 0.8s all;
+	-webkit-transition: 0.8s all;
+	-o-transition: 0.8s all;
+	-moz-transition: 0.8s all;
+	-ms-transition: 0.8s all;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0;
+	vertical-align: middle;
+}
+.mb-20 {
+	margin-bottom: 20px
+}
+.uicss-cn {
+	overflow-y: scroll;
+	scrollbar-face-color: #888;
+	scrollbar-shadow-color: #888;
+	scrollbar-highlight-color: #000;
+	scrollbar-track-color: #ccc;
+	scrollbar-arrow-color: #ccc;
+	overflow: -moz-scrollbars-button(#000) !important;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	line-height: 1;
+	width: 100%;
+}
+ .uicss-cn::-webkit-scrollbar {
+max-width: 10px;
+height:auto
+}
+.uicss-cn::-webkit-scrollbar-button {
+background-color:none
+}
+.uicss-cn::-webkit-scrollbar-track {
+background:#ccc
+}
+.uicss-cn::-webkit-scrollbar-thumb {
+background:#888;
+}
+.uicss-cn::-webkit-scrollbar-corner {
+background:#82AFFF;
+}
+.uicss-cn::-webkit-scrollbar-resizer {
+background:#FF0BEE;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #252c35;
+}
+/*以上是初始值以及覆盖*/
+/*_____________________________________________________分割线*/
+.main{ background: #252c35!important }
+#wrapper {
+	position: -webkit-sticky;
+	position: sticky;
+	opacity: 0
+}
+.wrapShow {
+	-webkit-animation: 1.3s say forwards;
+	animation: 1.3s say forwards
+}
+@-webkit-keyframes say {
+		 0% {opacity: 0}
+		 50% {opacity: 0.5}
+		 100% {opacity: 1}
+}
+@keyframes say {
+		 0% {opacity: 0}
+		 50% {opacity: 0.5}
+		 100% {opacity: 1}
+}
+#loading {}
+#loading div {
+	width: 100%;
+	height: 50%;
+	position: absolute;
+	left: 0;
+	background: #252c35;
+	z-index: 50;
+	-webkit-transition: 1s;
+	-o-transition: 1s;
+	transition: 1s;
+}
+#loading div:nth-of-type(1) {
+	top: 0;
+	-webkit-animation: 1.3s 1s xx1 forwards;
+	animation: 1.3s 1s xx1 forwards
+}
+#loading div:nth-of-type(2) {
+	bottom: 0;
+	-webkit-animation: 1.3s 1s xx2 forwards;
+	animation: 1.3s 1s xx2 forwards
+}
+#loading span {
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -2px;
+	z-index: 60;
+	-webkit-transition: .8s;
+	-o-transition: .8s;
+	transition: .8s;
+	-webkit-animation: 1s xxoo;
+	animation: 1s xxoo;
+}
+@-webkit-keyframes xxoo {
+		 0% {width: 0;}
+		 100% {width: 100%}
+}
+@keyframes xxoo {
+		 0% {width: 0;}
+		 100% {width: 100%}
+}
+ @-webkit-keyframes xx1 {
+		 0% {height: 50%}
+		 100% {height: 0%}
+}
+ @keyframes xx1 {
+		 0% {height: 50%}
+		 100% {height: 0%}
+}
+@-webkit-keyframes xx2 {
+		 0% {height: 50%}
+		 100% {height: 0%}
+}
+@keyframes xx2 {
+		 0% {height: 50%}
+		 100% {height: 0%}
+}
+/*全局加载动画*/
+/*_____________________________________________________分割线*/
+
+
+.iframe_mx {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+/*链接link*/
+/*_____________________________________________________分割线*/
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 17px 45px;
+	color: #657892;
+	border-left: 4px solid #2b333e;
+}
+.nav>li>a:hover, .nav>li>a:focus, .nav>li>a.active {
+	position: relative;
+	display: block;
+	padding: 17px 45px;
+	color: #3b98c8;
+	background: #252c35;
+	border-left: 4px solid #3b98c8
+}
+.nav > li > div {
+	background: #141a21;
+	display: none;
+}
+.nav >li > div> ul> li {
+	padding: 17px 50px;
+}
+.nav >li > div> ul {
+	padding: 0
+}
+.nav >li> div >ul> li > a:hover, .nav >li> div >ul> li > a:focus {
+	color: #3b98c8;
+	background: #141a21;
+}
+.navbar-default {
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: #252c35;
+	-webkit-box-shadow: 0 0 15px #000;
+	box-shadow: 0 0 15px #000;
+}
+.btn-toggle-mx {
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-webkit-transition: 0.8s all;
+	-o-transition: 0.8s all;
+	transition: 0.8s all
+}
+.btn-toggle-mx.transmx {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+/*导航以及开关*/
+/*_____________________________________________________分割线*/
+
+/*_____________________________________________________分割线*/
+/*尺寸全局覆盖*/
+@media screen and (min-width:1200px) {}
+@media screen and (min-width: 960px) and (max-width: 1199px) {}
+@media screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 245px) and (max-width: 767px) {
+		#wrapper #sidebar-nav, #wrapper .main {
+			padding-top: 75px!important;
+		}
+}
